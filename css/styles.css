@@ -1104,6 +1104,14 @@ strong { font-weight: 600; }
 /* ============================================================
    Responsive tweaks
    ============================================================ */
+.footer-alt {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  opacity: 0.55;
+}
+.footer-alt a { color: inherit; text-decoration: underline; }
+.footer-alt a:hover { opacity: 1; }
+
 @media (max-width: 400px) {
   .hero-ctas { flex-direction: column; width: 100%; }
   .btn { width: 100%; justify-content: center; }
