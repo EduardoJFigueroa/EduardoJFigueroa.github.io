@@ -12,12 +12,15 @@
 </head>
 <body>
 
-  <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <button class="menu-btn" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
 
   <div class="page">
 
     <aside class="sidebar" id="sidebar">
       <div>
+        <div class="sidebar-monogram" aria-hidden="true">EF</div>
         <p class="sidebar-name">Eduardo Figueroa-Santiago</p>
         <p class="sidebar-title">CS · Bioinformatics · Data Science</p>
       </div>
@@ -45,7 +48,7 @@
       </div>
     </aside>
 
-    <main class="content">
+    <main class="content" id="main">
 
       <header class="intro" id="about">
         <h1>Eduardo Figueroa-Santiago</h1>
@@ -53,10 +56,11 @@
           Undergraduate Computer Science student at the University of Puerto Rico, Rio Piedras
           (minor in Cybersecurity, expected December 2026). I work on bioinformatics research,
           ML pipelines, and data dashboards — mostly between San Juan and Pittsburgh.
+          I've presented at conferences across the U.S. and Puerto Rico, co-authored three papers,
+          and spent three summers doing research at Carnegie Mellon.
         </p>
         <p class="intro-meta">
-          Currently seeking research experiences and graduate programs in bioinformatics.<br>
-          10+ conference presentations · 3 publications · 3 summers at CMU
+          Currently seeking research experiences and graduate programs in bioinformatics.
         </p>
       </header>
 
@@ -65,7 +69,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>Bioinformatics Assistant</h4>
+            <h3>Bioinformatics Assistant</h3>
             <span class="entry-when">Jan 2026 — Present</span>
           </div>
           <p class="entry-where">Genos, LLC · San Juan, PR</p>
@@ -73,7 +77,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>FAIR Metrics Development Researcher</h4>
+            <h3>FAIR Metrics Development Researcher</h3>
             <span class="entry-when">Jan — Nov 2025</span>
           </div>
           <p class="entry-where">Carnegie Mellon University (HuBMAP) · Pittsburgh, PA</p>
@@ -88,7 +92,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>Internal Tools Developer</h4>
+            <h3>Internal Tools Developer</h3>
             <span class="entry-when">Nov — Dec 2025</span>
           </div>
           <p class="entry-where">UPR Medical Science · San Juan, PR</p>
@@ -101,7 +105,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>HPV &amp; Cervical Cancer Research Assistant</h4>
+            <h3>HPV &amp; Cervical Cancer Research Assistant</h3>
             <span class="entry-when">May — Aug 2025</span>
           </div>
           <p class="entry-where">UPR Medical Science / UAGMA Gurabo · San Juan, PR</p>
@@ -114,7 +118,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>Research Assistant — COVID-19 Diabetes Study</h4>
+            <h3>Research Assistant — COVID-19 Diabetes Study</h3>
             <span class="entry-when">May — Jul 2025</span>
           </div>
           <p class="entry-where">Abartys (work internship) · San Juan, PR</p>
@@ -127,7 +131,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>COVID-19 Diabetes Research Assistant</h4>
+            <h3>COVID-19 Diabetes Research Assistant</h3>
             <span class="entry-when">Jan — May 2025</span>
           </div>
           <p class="entry-where">UPR Medical Science / UPR Rio Piedras · San Juan, PR</p>
@@ -140,7 +144,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>HuBMAP Dashboard Developer</h4>
+            <h3>HuBMAP Dashboard Developer</h3>
             <span class="entry-when">May — Aug 2024</span>
           </div>
           <p class="entry-where">Carnegie Mellon University (HuBMAP) · Pittsburgh, PA</p>
@@ -154,7 +158,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>Bee Monitoring Interface Developer</h4>
+            <h3>Bee Monitoring Interface Developer</h3>
             <span class="entry-when">Aug 2023 — May 2024</span>
           </div>
           <p class="entry-where">UPR Rio Piedras · San Juan, PR</p>
@@ -167,7 +171,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>Brain Image Library Dashboard Developer</h4>
+            <h3>Brain Image Library Dashboard Developer</h3>
             <span class="entry-when">Jun — Aug 2023</span>
           </div>
           <p class="entry-where">Carnegie Mellon University · Pittsburgh, PA</p>
@@ -180,7 +184,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>Kidney Disease Reference Intervals Researcher</h4>
+            <h3>Kidney Disease Reference Intervals Researcher</h3>
             <span class="entry-when">Apr — Jun 2023</span>
           </div>
           <p class="entry-where">UPR Medical Science · San Juan, PR</p>
@@ -193,7 +197,7 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h4>Ethnic Disparities Research Assistant</h4>
+            <h3>Ethnic Disparities Research Assistant</h3>
             <span class="entry-when">Sep 2022 — May 2023</span>
           </div>
           <p class="entry-where">UPR Medical Science / UPR Rio Piedras · San Juan, PR</p>
@@ -322,7 +326,7 @@
 
             <article class="entry">
               <div class="entry-head">
-                <h4>AI/ML Course Assistant</h4>
+                <h3>AI/ML Course Assistant</h3>
                 <span class="entry-when">Feb — May 2023</span>
               </div>
               <p class="entry-where">UPR Medical Science</p>
@@ -335,7 +339,7 @@
 
             <article class="entry">
               <div class="entry-head">
-                <h4>AI/ML Course Developer</h4>
+                <h3>AI/ML Course Developer</h3>
                 <span class="entry-when">Apr — Jul 2022</span>
               </div>
               <p class="entry-where">UPR Medical Science</p>
@@ -348,7 +352,7 @@
 
             <article class="entry">
               <div class="entry-head">
-                <h4>STEM Instructor</h4>
+                <h3>STEM Instructor</h3>
                 <span class="entry-when">Jun — Jul 2019</span>
               </div>
               <p class="entry-where">C3tech · Caguas, PR</p>
@@ -363,7 +367,7 @@
 
             <article class="entry">
               <div class="entry-head">
-                <h4>HuBMAP Underrepresented Student Internship Extension</h4>
+                <h3>HuBMAP Underrepresented Student Internship Extension</h3>
                 <span class="entry-when">Nov 2024 — Present</span>
               </div>
               <p class="entry-where">Pittsburgh Supercomputing Center</p>
@@ -372,7 +376,7 @@
 
             <article class="entry">
               <div class="entry-head">
-                <h4>REU — SSP: HuBMAP Project</h4>
+                <h3>REU — SSP: HuBMAP Project</h3>
                 <span class="entry-when">May — Aug 2024</span>
               </div>
               <p class="entry-where">Carnegie Mellon University</p>
@@ -380,7 +384,7 @@
 
             <article class="entry">
               <div class="entry-head">
-                <h4>REU — SSP: Brain Image Library</h4>
+                <h3>REU — SSP: Brain Image Library</h3>
                 <span class="entry-when">Jun — Aug 2023</span>
               </div>
               <p class="entry-where">Carnegie Mellon University</p>
@@ -388,7 +392,7 @@
 
             <article class="entry">
               <div class="entry-head">
-                <h4>PRIME Fellowship</h4>
+                <h3>PRIME Fellowship</h3>
                 <span class="entry-when">Sep 2022 — May 2023</span>
               </div>
               <p class="entry-where">Ethnic Disparities Research (online)</p>
@@ -397,7 +401,7 @@
 
             <article class="entry">
               <div class="entry-head">
-                <h4>VADSTI Data Science &amp; AI/ML Certification</h4>
+                <h3>VADSTI Data Science &amp; AI/ML Certification</h3>
                 <span class="entry-when">Feb 2023</span>
               </div>
               <p class="entry-where">AIM-AHEAD</p>
@@ -410,7 +414,7 @@
         <h2>Skills &amp; Education</h2>
 
         <div class="edu-block">
-          <h4>B.S. Computer Science</h4>
+          <h3>B.S. Computer Science</h3>
           <p>University of Puerto Rico, Rio Piedras · Minor in Cybersecurity · Expected Dec 2026</p>
           <p class="courses">
             Relevant courses: Cybersecurity, Networking, Data Science, Bioinformatics,
@@ -441,12 +445,17 @@
 
       <section class="section" id="contact">
         <h2>Contact</h2>
-        <p>
-          Open to research collaborations and graduate program conversations.
-          Reach me at <a href="mailto:jfigueroa3945@gmail.com">jfigueroa3945@gmail.com</a>
-          or <a href="tel:+19393081163">(939) 308-1163</a>.
-          <a href="https://www.linkedin.com/in/eduardo-figueroa-7638191ba/" target="_blank" rel="noopener">LinkedIn</a>.
-        </p>
+        <div class="contact-card">
+          <p>
+            Open to research collaborations and graduate program conversations.
+            Based in San Juan — happy to talk about bioinformatics, ML pipelines, or dashboard work.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:jfigueroa3945@gmail.com">jfigueroa3945@gmail.com</a>
+            <a href="tel:+19393081163">(939) 308-1163</a>
+            <a href="https://www.linkedin.com/in/eduardo-figueroa-7638191ba/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
       </section>
 
       <footer class="page-footer">
