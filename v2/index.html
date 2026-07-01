@@ -3,773 +3,569 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eduardo Figueroa-Santiago — Computer Science student, Bioinformatics researcher, and Data Science enthusiast at UPR Rio Piedras.">
-  <meta property="og:title" content="Eduardo Figueroa-Santiago">
-  <meta property="og:description" content="CS Student · Bioinformatics Researcher · Data Science Enthusiast">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://eduardojfigueroa.github.io/v2/">
-  <title>Eduardo Figueroa-Santiago · Alt</title>
+  <meta name="description" content="Eduardo Figueroa-Santiago — Computer Science student actively seeking research experiences or graduate schools in Bioinformatics at UPR Rio Piedras.">
+  <meta name="keywords" content="Bioinformatics, Computer Science, Machine Learning, Data Science, Eduardo Figueroa-Santiago, UPR, HuBMAP, FAIR metrics">
+  <title>Eduardo Figueroa-Santiago</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip" href="#content">Skip to content</a>
 
-  <!-- NAVIGATION -->
-  <header class="site-header" id="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-ring" aria-hidden="true">EF</span>
-        <span class="logo-name">Eduardo Figueroa</span>
-      </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-menu" id="nav-menu" role="list">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#research" class="nav-link">Research</a></li>
-        <li><a href="#teaching" class="nav-link">Teaching</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
-      </ul>
+  <!-- Fixed side rail -->
+  <aside class="rail" aria-label="Side navigation">
+    <span class="rail-name" aria-hidden="true">EF</span>
+    <nav class="rail-nav" aria-label="Sections">
+      <a href="#intro"      class="rail-dot" data-label="Intro"      aria-label="Intro"></a>
+      <a href="#work"       class="rail-dot" data-label="Work"       aria-label="Work"></a>
+      <a href="#research"   class="rail-dot" data-label="Research"   aria-label="Research"></a>
+      <a href="#teaching"   class="rail-dot" data-label="Teaching"   aria-label="Teaching"></a>
+      <a href="#skills"     class="rail-dot" data-label="Skills"     aria-label="Skills"></a>
+      <a href="#contact"    class="rail-dot" data-label="Contact"    aria-label="Contact"></a>
     </nav>
-  </header>
+    <a class="rail-v1" href="../" aria-label="Switch to original layout">v1</a>
+  </aside>
 
-  <main id="main">
+  <!-- Mobile top bar -->
+  <div class="topbar">
+    <span class="topbar-name">Eduardo Figueroa</span>
+    <button class="topbar-menu" id="mob-btn" type="button" aria-expanded="false" aria-controls="mob-nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <nav class="mob-nav" id="mob-nav" hidden>
+    <a href="#intro">Intro</a>
+    <a href="#work">Work</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <canvas id="hero-canvas" aria-hidden="true"></canvas>
-      <div class="hero-content container">
-        <div class="hero-avatar" aria-hidden="true">EF</div>
-        <h1 class="hero-name">Eduardo Figueroa<wbr>-Santiago</h1>
-        <p class="hero-tagline">
-          <span id="hero-rotate" aria-live="polite">Bioinformatics Researcher</span>
-          <span class="hero-tagline-dot">&nbsp;&middot;&nbsp;</span>
-          CS Student at UPR Rio Piedras
-        </p>
-        <p class="hero-meta">
-          <span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            San Juan, Puerto Rico
-          </span>
-          <span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Expected Dec 2026
-          </span>
-        </p>
-        <div class="hero-ctas">
-          <a href="#experience" class="btn btn--primary">View Experience</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
-        </div>
-      </div>
-      <a href="#about" class="hero-scroll" aria-label="Scroll to about">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
-    </section>
+  <main id="content">
 
-    <!-- ABOUT -->
-    <section id="about" class="section section--alt">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <span class="section-label">About me</span>
-            <h2 class="section-title">Turning data into<br><em>answers that matter</em></h2>
-            <p class="about-body">
-              I'm an undergraduate CS student at UPR Rio Piedras with a minor in Cybersecurity,
-              actively seeking research opportunities and graduate programs in Bioinformatics.
-              My work spans dashboard design, ML pipelines, and biomedical data analysis —
-              collaborating with researchers across Puerto Rico and Carnegie Mellon University.
-            </p>
-            <p class="about-body">
-              Whether I'm visualizing FAIR metrics in Grafana, training models on patient cohorts,
-              or building live monitoring interfaces, I care about making complex data legible and useful.
-            </p>
+    <!-- ========== INTRO ========== -->
+    <section id="intro" class="panel panel-intro">
+      <div class="intro-grid">
+        <div class="intro-headline">
+          <p class="intro-kicker">
+            <span class="mono">UPR Rio Piedras ·</span> San Juan, Puerto Rico
+          </p>
+          <h1>Eduardo<br>Figueroa<span class="accent-dot">.</span></h1>
+          <div class="intro-roles" aria-label="Roles">
+            <span class="role role--active" aria-hidden="false">Bioinformatics Researcher</span>
+            <span class="role" aria-hidden="true">Data Science Enthusiast</span>
+            <span class="role" aria-hidden="true">ML Pipeline Builder</span>
+            <span class="role" aria-hidden="true">Dashboard Developer</span>
+            <span class="role" aria-hidden="true">CS Student, Minor Cybersecurity</span>
           </div>
-          <div class="about-stats reveal">
-            <div class="stat">
-              <span class="stat-num" data-count="10" data-suffix="+">0</span>
-              <span class="stat-label">Conference Talks</span>
+        </div>
+
+        <div class="intro-aside">
+          <p class="intro-bio">
+            Undergraduate Computer Science student actively seeking research experiences or graduate schools in Bioinformatics.
+            Graduating December 2026.
+          </p>
+
+          <div class="bento">
+            <div class="bento-cell bento-cell--wide">
+              <span class="bento-num" data-count="10" data-suffix="+">0+</span>
+              <span class="bento-label">Conference presentations</span>
             </div>
-            <div class="stat">
-              <span class="stat-num" data-count="3">0</span>
-              <span class="stat-label">Publications</span>
+            <div class="bento-cell">
+              <span class="bento-num" data-count="2">0</span>
+              <span class="bento-label">Publications</span>
             </div>
-            <div class="stat">
-              <span class="stat-num" data-count="3" data-suffix="×">0</span>
-              <span class="stat-label">CMU Summers</span>
+            <div class="bento-cell">
+              <span class="bento-num" data-count="3">0</span>
+              <span class="bento-label">CMU summers</span>
             </div>
-            <div class="stat">
-              <span class="stat-num" data-count="2026">0</span>
-              <span class="stat-label">Graduating</span>
-            </div>
+          </div>
+
+          <div class="intro-links">
+            <a href="mailto:eduardo.figueroa7@upr.edu" class="chip">eduardo.figueroa7@upr.edu</a>
+            <a href="tel:+19393081163" class="chip">(939) 308-1163</a>
+            <a href="https://www.linkedin.com/in/eduardo-figueroa-7638191ba/" class="chip" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
+      <div class="intro-scroll-hint" aria-hidden="true">scroll ↓</div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Work history</span>
-          <h2 class="section-title">Experience</h2>
-        </div>
+    <!-- ========== WORK ========== -->
+    <section id="work" class="panel panel-work">
+      <div class="panel-inner">
+        <header class="panel-header">
+          <span class="panel-num mono">01</span>
+          <h2>Work</h2>
+          <div class="filter-row" role="group" aria-label="Filter work">
+            <button class="ftag ftag--on" data-f="all">All</button>
+            <button class="ftag" data-f="research">Research</button>
+            <button class="ftag" data-f="dev">Dev</button>
+            <button class="ftag" data-f="cmu">CMU</button>
+          </div>
+        </header>
 
-        <div class="filter-bar reveal" role="tablist" aria-label="Filter experience">
-          <button class="filter-btn active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="filter-btn" type="button" data-filter="research" role="tab" aria-selected="false">Research</button>
-          <button class="filter-btn" type="button" data-filter="dev" role="tab" aria-selected="false">Development</button>
-          <button class="filter-btn" type="button" data-filter="cmu" role="tab" aria-selected="false">CMU</button>
-        </div>
+        <div class="accordion" id="accordion">
 
-        <div class="timeline">
-
-          <article class="timeline-item reveal" data-tags="research">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">Bioinformatics Assistant</h3>
-                  <p class="timeline-org">Genos, LLC</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Jan 2026 – Present</span>
-                  <span class="timeline-loc">San Juan, PR</span>
-                </div>
+          <div class="acc-item reveal" data-cats="research dev">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">Bioinformatics Assistant</span>
+                <span class="acc-org">Genos, LLC</span>
               </div>
-              <div class="timeline-tags">
-                <span class="tag tag--bio">Bioinformatics</span>
-                <span class="tag tag--research">Research</span>
-              </div>
+              <span class="acc-when mono">Jan 2026 – Present</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">San Juan, PR</span>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="research cmu">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">FAIR Metrics Development Researcher</h3>
-                  <p class="timeline-org">Carnegie Mellon University &mdash; HuBMAP</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Jan 2025 – Nov 2025</span>
-                  <span class="timeline-loc">Pittsburgh, PA</span>
-                </div>
+          <div class="acc-item reveal" data-cats="research cmu">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">FAIR Metrics Development Researcher</span>
+                <span class="acc-org">Carnegie Mellon University — HuBMAP</span>
               </div>
-              <ul class="timeline-bullets">
-                <li>Developed, assessed, and visualized FAIR metrics for datasets in HuBMAP</li>
-                <li>Created custom metrics for each HuBMAP dataset and managed data evolution and new schemas</li>
+              <span class="acc-when mono">Jan – Nov 2025</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">Pittsburgh, PA · Mentor: I. Cao-Berg</span>
+              <ul>
+                <li>Developed, assessed and visualized FAIR metrics for datasets in HuBMAP</li>
+                <li>Created custom metrics for each HuBMAP dataset</li>
+                <li>Managed data evolution and new schemas</li>
                 <li>Designed interface to select views of FAIRness data</li>
               </ul>
-              <p class="timeline-mentor">Mentor: I. Cao-Berg</p>
-              <div class="timeline-tags">
-                <span class="tag tag--hubmap">HuBMAP</span>
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--grafana">Grafana</span>
-                <span class="tag tag--fair">FAIR</span>
+              <div class="acc-tags">
+                <span>Python</span><span>Grafana</span><span>FAIR</span><span>HuBMAP</span>
               </div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="dev">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">Internal Tools Developer</h3>
-                  <p class="timeline-org">UPR Medical Science</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Nov 2025 – Dec 2025</span>
-                  <span class="timeline-loc">San Juan, PR</span>
-                </div>
+          <div class="acc-item reveal" data-cats="dev">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">Internal Tools Developer</span>
+                <span class="acc-org">UPR Medical Science</span>
               </div>
-              <ul class="timeline-bullets">
+              <span class="acc-when mono">Nov – Dec 2025</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">San Juan, PR · Mentors: Brenda Nieves, Dr. Roche-Lima</span>
+              <ul>
                 <li>Evaluated and modified internal tools for data processing</li>
                 <li>Designed user-friendly interfaces for data management</li>
               </ul>
-              <p class="timeline-mentor">Mentors: Brenda Nieves, Dr. Roche-Lima</p>
-              <div class="timeline-tags">
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--ui">UI/UX</span>
-              </div>
+              <div class="acc-tags"><span>Python</span><span>UI</span></div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="research">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">HPV &amp; Cervical Cancer Research Assistant</h3>
-                  <p class="timeline-org">UPR Medical Science / UAGMA Gurabo</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">May 2025 – Aug 2025</span>
-                  <span class="timeline-loc">San Juan, PR</span>
-                </div>
+          <div class="acc-item reveal" data-cats="research">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">HPV and Cervical Cancer Research Assistant</span>
+                <span class="acc-org">UPR Medical Science / UAGMA Gurabo</span>
               </div>
-              <ul class="timeline-bullets">
+              <span class="acc-when mono">May – Aug 2025</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">San Juan, PR · Mentors: Dr. Roche-Lima, Dr. Tosado</span>
+              <ul>
                 <li>Studied HPV relation to cervical cancer using machine learning approaches</li>
-                <li>Organized data and created patient cohorts; conducted feature importance analysis</li>
+                <li>Organized data and created patient cohorts</li>
+                <li>Conducted feature importance analysis</li>
               </ul>
-              <p class="timeline-mentor">Mentors: Dr. Roche-Lima, Dr. Tosado</p>
-              <div class="timeline-tags">
-                <span class="tag tag--ml">ML</span>
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--bio">Bioinformatics</span>
-              </div>
+              <div class="acc-tags"><span>ML</span><span>Python</span><span>Bioinformatics</span></div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="research">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">Research Assistant — COVID-19 Diabetes Study</h3>
-                  <p class="timeline-org">Abartys <span class="badge-intern">Internship</span></p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">May 2025 – Jul 2025</span>
-                  <span class="timeline-loc">San Juan, PR</span>
-                </div>
+          <div class="acc-item reveal" data-cats="research">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">Research Assistant — COVID-19 Diabetes Study</span>
+                <span class="acc-org">Abartys (Work Internship)</span>
               </div>
-              <ul class="timeline-bullets">
+              <span class="acc-when mono">May – Jul 2025</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">San Juan, PR · Mentors: Dr. Roche-Lima, Dr. Velev</span>
+              <ul>
                 <li>Organized data and created patient cohorts for COVID-19 diabetes research</li>
-                <li>Implemented machine learning models for data analysis</li>
-                <li>Conducted feature importance analysis using local datasets</li>
+                <li>Implemented ML models; conducted feature importance analysis</li>
               </ul>
-              <p class="timeline-mentor">Mentors: Dr. Roche-Lima, Dr. Velev</p>
-              <div class="timeline-tags">
-                <span class="tag tag--ml">ML</span>
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--research">Research</span>
-              </div>
+              <div class="acc-tags"><span>ML</span><span>Python</span></div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="research">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">COVID-19 Diabetes Research Assistant</h3>
-                  <p class="timeline-org">UPR Medical Science / UPR Rio Piedras</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Jan 2025 – May 2025</span>
-                  <span class="timeline-loc">San Juan, PR</span>
-                </div>
+          <div class="acc-item reveal" data-cats="research">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">COVID-19 Diabetes Research Assistant</span>
+                <span class="acc-org">UPR Medical Science / UPR Rio Piedras</span>
               </div>
-              <ul class="timeline-bullets">
+              <span class="acc-when mono">Jan – May 2025</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">San Juan, PR · Mentors: Dr. Roche-Lima, Dra. Lluberes</span>
+              <ul>
                 <li>Evaluated COVID patients with diabetes using ML models</li>
-                <li>Organized data and created cohorts; analyzed feature importance</li>
+                <li>Organized data and created cohorts</li>
+                <li>Analyzed feature importance</li>
               </ul>
-              <p class="timeline-mentor">Mentors: Dr. Roche-Lima, Dra. Lluberes</p>
-              <div class="timeline-tags">
-                <span class="tag tag--ml">ML</span>
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--research">Research</span>
-              </div>
+              <div class="acc-tags"><span>ML</span><span>Python</span></div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="dev cmu">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">HuBMAP Dashboard Developer</h3>
-                  <p class="timeline-org">Carnegie Mellon University &mdash; HuBMAP</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">May 2024 – Aug 2024</span>
-                  <span class="timeline-loc">Pittsburgh, PA</span>
-                </div>
+          <div class="acc-item reveal" data-cats="dev cmu">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">HuBMAP Dashboard Developer</span>
+                <span class="acc-org">Carnegie Mellon University — HuBMAP</span>
               </div>
-              <ul class="timeline-bullets">
-                <li>Designed metrics for HuBMAP dashboard with views for data curators, public, and PIs</li>
+              <span class="acc-when mono">May – Aug 2024</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">Pittsburgh, PA · Mentor: I. Cao-Berg</span>
+              <ul>
+                <li>Designed metrics for HuBMAP dashboard</li>
+                <li>Created different views for stakeholders (data curators, public view, PI)</li>
                 <li>Implemented automatic FAIRness general metrics using Python and Grafana</li>
-                <li>Used Bridges&nbsp;2 for processing computational analysis</li>
+                <li>Used Bridges 2 for processing computational analysis</li>
               </ul>
-              <p class="timeline-mentor">Mentor: I. Cao-Berg</p>
-              <div class="timeline-tags">
-                <span class="tag tag--hubmap">HuBMAP</span>
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--grafana">Grafana</span>
-                <span class="tag tag--dash">Dashboards</span>
-              </div>
+              <div class="acc-tags"><span>Python</span><span>Grafana</span><span>HuBMAP</span><span>Bridges 2</span></div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="dev">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">Bee Monitoring Interface Developer</h3>
-                  <p class="timeline-org">UPR Rio Piedras</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Aug 2023 – May 2024</span>
-                  <span class="timeline-loc">San Juan, PR</span>
-                </div>
+          <div class="acc-item reveal" data-cats="dev">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">Bee Monitoring Interface Developer</span>
+                <span class="acc-org">UPR Rio Piedras</span>
               </div>
-              <ul class="timeline-bullets">
+              <span class="acc-when mono">Aug 2023 – May 2024</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">San Juan, PR · Mentor: Dr. Megret</span>
+              <ul>
                 <li>Added new features to platform for live bee monitoring</li>
-                <li>Worked with Python, JavaScript, and MongoDB; developed API integration skills</li>
+                <li>Worked with Python, JavaScript, and MongoDB</li>
+                <li>Learned API development techniques</li>
               </ul>
-              <p class="timeline-mentor">Mentor: Dr. Megret</p>
-              <div class="timeline-tags">
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--js">JavaScript</span>
-                <span class="tag tag--mongo">MongoDB</span>
-                <span class="tag tag--api">API</span>
-              </div>
+              <div class="acc-tags"><span>Python</span><span>JavaScript</span><span>MongoDB</span><span>API</span></div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="dev cmu">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">Brain Image Library Dashboard Developer</h3>
-                  <p class="timeline-org">Carnegie Mellon University</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Jun 2023 – Aug 2023</span>
-                  <span class="timeline-loc">Pittsburgh, PA</span>
-                </div>
+          <div class="acc-item reveal" data-cats="dev cmu">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">Brain Image Library Dashboard Developer</span>
+                <span class="acc-org">Carnegie Mellon University</span>
               </div>
-              <ul class="timeline-bullets">
-                <li>Designed dashboard requirements and metrics; evaluated and separated metadata using Bridges&nbsp;2</li>
-                <li>Implemented metrics in the dashboard system</li>
+              <span class="acc-when mono">Jun – Aug 2023</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">Pittsburgh, PA · Mentor: I. Cao-Berg</span>
+              <ul>
+                <li>Designed dashboard requirements and metrics for the Brain Image Library</li>
+                <li>Evaluated and separated metadata using Bridges 2</li>
               </ul>
-              <p class="timeline-mentor">Mentor: I. Cao-Berg</p>
-              <div class="timeline-tags">
-                <span class="tag tag--hubmap">HuBMAP</span>
-                <span class="tag tag--dash">Dashboards</span>
-                <span class="tag tag--research">Research</span>
-              </div>
+              <div class="acc-tags"><span>Dashboards</span><span>Bridges 2</span></div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="research">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">Kidney Disease Reference Intervals Researcher</h3>
-                  <p class="timeline-org">UPR Medical Science</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Apr 2023 – Jun 2023</span>
-                  <span class="timeline-loc">San Juan, PR</span>
-                </div>
+          <div class="acc-item reveal" data-cats="research">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">Kidney Disease Reference Intervals Researcher</span>
+                <span class="acc-org">UPR Medical Science</span>
               </div>
-              <ul class="timeline-bullets">
+              <span class="acc-when mono">Apr – Jun 2023</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">San Juan, PR · Mentor: Dr. Roche-Lima</span>
+              <ul>
                 <li>Developed unsupervised ML method for chronic kidney disease reference intervals</li>
-                <li>Published: Velev, J., LeBien, J. &amp; Roche-Lima, A. <em>Sci Rep</em> 13, 17198 (2023)</li>
+                <li>Published: <em>Velev, J., LeBien, J. &amp; Roche-Lima, A. Sci Rep 13, 17198 (2023)</em></li>
               </ul>
-              <p class="timeline-mentor">Mentor: Dr. Roche-Lima</p>
-              <div class="timeline-tags">
-                <span class="tag tag--ml">ML</span>
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--bio">Bioinformatics</span>
-              </div>
+              <div class="acc-tags"><span>ML</span><span>Python</span></div>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-item reveal" data-tags="research">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <div>
-                  <h3 class="timeline-role">Ethnic Disparities Research Assistant</h3>
-                  <p class="timeline-org">UPR Medical Science / UPR Rio Piedras</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Sep 2022 – May 2023</span>
-                  <span class="timeline-loc">San Juan, PR</span>
-                </div>
+          <div class="acc-item reveal" data-cats="research">
+            <button class="acc-head" type="button" aria-expanded="false">
+              <div class="acc-title-group">
+                <span class="acc-role">Ethnic Disparities Research Assistant</span>
+                <span class="acc-org">UPR Medical Science / UPR Rio Piedras</span>
               </div>
-              <ul class="timeline-bullets">
+              <span class="acc-when mono">Sep 2022 – May 2023</span>
+              <span class="acc-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-body">
+              <span class="acc-loc mono">San Juan, PR · Mentors: Dr. Roche-Lima, Dr. H. Ortiz</span>
+              <ul>
                 <li>Researched ethnic disparities in urinary and serum biomarkers</li>
-                <li>Applied ML methods for lab test reference intervals by race and ethnicity using the <em>All of Us</em> dataset</li>
+                <li>Applied ML methods for lab test reference intervals by race and ethnicity</li>
+                <li>Worked with Python and All of Us dataset</li>
               </ul>
-              <p class="timeline-mentor">Mentors: Dr. Roche-Lima, Dr. H. Ortiz</p>
-              <div class="timeline-tags">
-                <span class="tag tag--ml">ML</span>
-                <span class="tag tag--python">Python</span>
-                <span class="tag tag--research">Research</span>
-              </div>
+              <div class="acc-tags"><span>ML</span><span>Python</span></div>
             </div>
-          </article>
+          </div>
 
         </div>
       </div>
     </section>
 
-    <!-- RESEARCH -->
-    <section id="research" class="section section--alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Scholarship</span>
-          <h2 class="section-title">Research &amp; Publications</h2>
-        </div>
+    <!-- ========== RESEARCH ========== -->
+    <section id="research" class="panel panel-research">
+      <div class="panel-inner">
+        <header class="panel-header">
+          <span class="panel-num mono">02</span>
+          <h2>Research</h2>
+        </header>
 
-        <div class="research-grid">
+        <div class="research-layout">
+          <div class="pubs-block">
+            <h3 class="block-title">Publications</h3>
 
-          <div class="research-col reveal">
-            <h3 class="research-col-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              Papers
-            </h3>
-
-            <article class="pub-card">
-              <p class="pub-date">May 2026</p>
-              <h4 class="pub-title">Leveraging Machine Learning to Assess Post-COVID-19 Glycemic Control in Diabetic Patients</h4>
-              <p class="pub-authors">Marie Lluberes-Contreras, <strong>Eduardo Figueroa-Santiago</strong>, Hamid-Reza Kohan-Ghadr, Angel Ortiz-Ortega, Abiel Roche-Lima</p>
-              <p class="pub-venue"><em>International Journal of Environmental Research and Public Health</em>, 23(5), 644</p>
-              <a href="https://doi.org/10.3390/ijerph23050644" class="pub-doi" target="_blank" rel="noopener">DOI: 10.3390/ijerph23050644 &rarr;</a>
+            <article class="pub reveal">
+              <span class="pub-year mono">2023</span>
+              <h4>Unsupervised machine learning method for indirect estimation of reference intervals for chronic kidney disease in the Puerto Rican population</h4>
+              <p class="pub-authors">Velev, J., LeBien, J. &amp; Roche-Lima, A.</p>
+              <p class="pub-venue">Scientific Reports, 13, 17198 (2023)</p>
             </article>
 
-            <article class="pub-card">
-              <p class="pub-date">2023</p>
-              <h4 class="pub-title">AIML + HDR: A Pilot Course on Artificial Intelligence and Machine Learning Applied to Health Disparities Research</h4>
-              <p class="pub-authors">Heredia-Negron, Frances, <strong>et al.</strong></p>
-              <p class="pub-venue"><em>Int. J. Environ. Res. Public Health</em> 20.3 (2023): 2726</p>
+            <article class="pub reveal">
+              <span class="pub-year mono">2023</span>
+              <h4>Evaluation of AIML+ HDR—A Course to Enhance Data Science Workforce Capacity for Hispanic Biomedical Researchers</h4>
+              <p class="pub-authors">Heredia-Negron, Frances, et al.</p>
+              <p class="pub-venue">International Journal of Environmental Research and Public Health, 20.3 (2023): 2726</p>
             </article>
 
-            <article class="pub-card">
-              <p class="pub-date">2023</p>
-              <h4 class="pub-title">Unsupervised ML Method for Chronic Kidney Disease Reference Intervals</h4>
-              <p class="pub-authors">Velev, J., LeBien, J. &amp; Roche-Lima, A. (contributor: Eduardo Figueroa-Santiago)</p>
-              <p class="pub-venue"><em>Scientific Reports</em> 13, 17198 (2023)</p>
+            <article class="pub reveal pub--review">
+              <span class="pub-year mono">Under Review</span>
+              <h4>Validating Gaussian Mixture Models for Accurate Health Interval Determination: A Multi-Ethnic Analysis of Laboratory Parameters from Electronic Health Records</h4>
             </article>
-
           </div>
 
-          <div class="research-col reveal">
-            <h3 class="research-col-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-              Conference Presentations
-            </h3>
+          <div class="talks-block">
+            <h3 class="block-title">Conference Talks</h3>
+            <ol class="talks-list reveal">
+              <li><span class="mono">Mar 2026</span> <span>SACNAS Chapter UPR-RP — HuBMAP Visualization Tool for FAIR Metrics</span></li>
+              <li><span class="mono">Nov 2024</span> <span>ABRCMS — HuBMAP Dashboard Development (Accepted)</span></li>
+              <li><span class="mono">Oct 2024</span> <span>SACNAS — HuBMAP Dashboard Development</span></li>
+              <li><span class="mono">Oct 2024</span> <span>Gateway Conference — HuBMAP Dashboard Development (Accepted)</span></li>
+              <li><span class="mono">May 2024</span> <span>SAIL Conference — Health Disparities Reference Intervals</span></li>
+              <li><span class="mono">Mar 2024</span> <span>SIDIM — Bee Monitoring Web Application</span></li>
+              <li><span class="mono">Jan 2024</span> <span>Mini-Symposium AI Applied to Health Disparities — Health Disparities Research</span></li>
+              <li><span class="mono">Oct 2023</span> <span>SACNAS — Brain Image Library Dashboard</span></li>
+              <li><span class="mono">Aug 2023</span> <span>AIM-AHEAD Conference — Ethnic Disparities in Biomarkers</span></li>
+              <li><span class="mono">Sep 2022</span> <span>CIO &amp; IT Leader Conference — Student programmer presentation</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <ul class="talks-list">
-              <li class="talk-item">
-                <div class="talk-venue">SACNAS Chapter UPR-RP</div>
-                <div class="talk-title">HuBMAP Visualization Tool for FAIR Metrics</div>
-                <span class="talk-meta">Mar 2026 &middot; San Juan, PR</span>
+    <!-- ========== TEACHING ========== -->
+    <section id="teaching" class="panel panel-teaching">
+      <div class="panel-inner">
+        <header class="panel-header">
+          <span class="panel-num mono">03</span>
+          <h2>Teaching &amp; Awards</h2>
+        </header>
+
+        <div class="ta-layout">
+          <div class="reveal">
+            <h3 class="block-title">Teaching</h3>
+            <div class="ta-list">
+              <div class="ta-row">
+                <span class="mono ta-date">2023</span>
+                <div>
+                  <strong>AI/ML Course Assistant</strong>
+                  <p>Assisted with &ldquo;Artificial Intelligence and Machine Learning applied to Health Disparities Research (Version 2)&rdquo;. Expanded course to professionals outside UPR system. Supervised student projects and answered technical questions. Applied student feedback to improve course materials. Mentor: Dr. Roche-Lima</p>
+                </div>
+              </div>
+              <div class="ta-row">
+                <span class="mono ta-date">2022</span>
+                <div>
+                  <strong>AI/ML Course Developer</strong>
+                  <p>Developed pilot course &ldquo;AIML + HDR&rdquo; for graduate students and professionals. Created PowerPoints, example exercises, and instructional videos. Graded assignments and provided student support. Published: Heredia-Negron, Frances, et al. Int. J. Environ. Res. Public Health 20.3 (2023): 2726. Mentor: Dr. Roche-Lima</p>
+                </div>
+              </div>
+              <div class="ta-row">
+                <span class="mono ta-date">2019</span>
+                <div>
+                  <strong>STEM Instructor — C3tech</strong>
+                  <p>Taught STEM concepts to elementary students. Focused on programming with Scratch and computational logic. Caguas, PR</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <h3 class="block-title">Fellowships &amp; Awards</h3>
+            <div class="award-list">
+              <div class="award-row">
+                <div class="award-marker">★</div>
+                <div>
+                  <strong>HuBMAP Underrepresented Student Internship Extension</strong>
+                  <p class="mono">Pittsburgh Supercomputing Center · Pittsburgh, PA · Nov 2024 – Present</p>
+                  <ul>
+                    <li>Continuation of HuBMAP research project</li>
+                  </ul>
+                  <p>Mentors: Ivan Cao-Berg, Dr. H. Ortiz</p>
+                </div>
+              </div>
+              <div class="award-row">
+                <div class="award-marker">★</div>
+                <div>
+                  <strong>REU — SSP: HuBMAP Project</strong>
+                  <p class="mono">Carnegie Mellon University · May – Aug 2024</p>
+                </div>
+              </div>
+              <div class="award-row">
+                <div class="award-marker">★</div>
+                <div>
+                  <strong>REU — SSP: Brain Image Library</strong>
+                  <p class="mono">Carnegie Mellon University · Jun – Aug 2023</p>
+                </div>
+              </div>
+              <div class="award-row">
+                <div class="award-marker">★</div>
+                <div>
+                  <strong>PRIME Fellowship — Ethnic Disparities Research</strong>
+                  <p class="mono">Sep 2022 – May 2023</p>
+                  <ul>
+                    <li>Machine learning methods for reference intervals by race and ethnicity</li>
+                  </ul>
+                  <p>Mentors: Dr. Roche-Lima, Dr. H. Ortiz</p>
+                </div>
+              </div>
+              <div class="award-row">
+                <div class="award-marker">★</div>
+                <div>
+                  <strong>VADSTI Data Science Training</strong>
+                  <p class="mono">AIM-AHEAD · Data Science &amp; AI/ML Certification · Feb 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="panel panel-skills">
+      <div class="panel-inner">
+        <header class="panel-header">
+          <span class="panel-num mono">04</span>
+          <h2>Skills</h2>
+        </header>
+
+        <div class="skills-layout reveal">
+          <div class="edu-block">
+            <p class="mono edu-label">Education</p>
+            <h3>B.S. Computer Science</h3>
+            <p>University of Puerto Rico, Rio Piedras<br>Minor in Cybersecurity · Expected Dec 2026</p>
+            <p class="edu-courses">Cybersecurity · Networking · Data Science · Bioinformatics · Operating Systems · Intro to Computational Statistics · API Development</p>
+          </div>
+
+          <div class="lang-block">
+            <p class="mono edu-label">Programming</p>
+            <ul class="lang-bars">
+              <li>
+                <span class="lb-name">Python</span>
+                <div class="lb-bar"><div class="lb-fill" style="--pct:70%"></div></div>
+                <span class="lb-lvl mono">Intermediate</span>
               </li>
-              <li class="talk-item">
-                <div class="talk-venue">ABRCMS <span class="badge-accept">Accepted</span></div>
-                <div class="talk-title">HuBMAP Dashboard Development</div>
-                <span class="talk-meta">Nov 2024 &middot; Pittsburgh, PA</span>
+              <li>
+                <span class="lb-name">C++</span>
+                <div class="lb-bar"><div class="lb-fill" style="--pct:65%"></div></div>
+                <span class="lb-lvl mono">Intermediate</span>
               </li>
-              <li class="talk-item">
-                <div class="talk-venue">SACNAS</div>
-                <div class="talk-title">HuBMAP Dashboard Development</div>
-                <span class="talk-meta">Oct 2024 &middot; Arizona</span>
+              <li>
+                <span class="lb-name">C</span>
+                <div class="lb-bar"><div class="lb-fill" style="--pct:65%"></div></div>
+                <span class="lb-lvl mono">Intermediate</span>
               </li>
-              <li class="talk-item">
-                <div class="talk-venue">Gateway Conference <span class="badge-accept">Accepted</span></div>
-                <div class="talk-title">HuBMAP Dashboard Development</div>
-                <span class="talk-meta">Oct 2024 &middot; Montana</span>
+              <li>
+                <span class="lb-name">Bash</span>
+                <div class="lb-bar"><div class="lb-fill" style="--pct:60%"></div></div>
+                <span class="lb-lvl mono">Intermediate</span>
               </li>
-              <li class="talk-item">
-                <div class="talk-venue">SAIL Conference</div>
-                <div class="talk-title">Health Disparities Reference Intervals</div>
-                <span class="talk-meta">May 2024 &middot; Rio Grande, PR</span>
+              <li>
+                <span class="lb-name">JavaScript</span>
+                <div class="lb-bar"><div class="lb-fill" style="--pct:35%"></div></div>
+                <span class="lb-lvl mono">Basic</span>
               </li>
-              <li class="talk-item">
-                <div class="talk-venue">SIDIM</div>
-                <div class="talk-title">Bee Monitoring Web Application</div>
-                <span class="talk-meta">Mar 2024 &middot; Humacao, PR</span>
+              <li>
+                <span class="lb-name">C#</span>
+                <div class="lb-bar"><div class="lb-fill" style="--pct:25%"></div></div>
+                <span class="lb-lvl mono">Basic</span>
               </li>
-              <li class="talk-item">
-                <div class="talk-venue">Mini-Symposium — AI Applied to Health Disparities</div>
-                <div class="talk-title">Health Disparities Research</div>
-                <span class="talk-meta">Jan 2024 &middot; San Juan, PR</span>
-              </li>
-              <li class="talk-item">
-                <div class="talk-venue">SACNAS</div>
-                <div class="talk-title">Brain Image Library Dashboard</div>
-                <span class="talk-meta">Oct 2023 &middot; Oregon</span>
-              </li>
-              <li class="talk-item">
-                <div class="talk-venue">AIM-AHEAD Conference</div>
-                <div class="talk-title">Ethnic Disparities in Biomarkers</div>
-                <span class="talk-meta">Aug 2023 &middot; Bethesda, MD</span>
-              </li>
-              <li class="talk-item">
-                <div class="talk-venue">CIO &amp; IT Leader Conference</div>
-                <div class="talk-title">Student Programmer Presentation</div>
-                <span class="talk-meta">Sep 2022 &middot; San Juan, PR</span>
+              <li>
+                <span class="lb-name">Visual Basic</span>
+                <div class="lb-bar"><div class="lb-fill" style="--pct:25%"></div></div>
+                <span class="lb-lvl mono">Basic</span>
               </li>
             </ul>
+          </div>
 
+          <div class="tools-block">
+            <p class="mono edu-label">Tools</p>
+            <div class="tools-grid">
+              <span>MongoDB</span>
+              <span>Grafana</span>
+              <span>Bridges 2</span>
+              <span>Git</span>
+            </div>
+            <p class="mono edu-label" style="margin-top:2rem">Languages</p>
+            <div class="tools-grid">
+              <span>Spanish (native)</span>
+              <span>English (native)</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TEACHING & AWARDS -->
-    <section id="teaching" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Giving back</span>
-          <h2 class="section-title">Teaching &amp; Awards</h2>
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="panel panel-contact">
+      <div class="panel-inner contact-inner">
+        <span class="panel-num mono">05</span>
+        <h2 class="contact-headline">Let's talk.</h2>
+        <p class="contact-sub">
+          Open to research collaborations, graduate program conversations,<br>
+          and anything at the intersection of computing and biology.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:eduardo.figueroa7@upr.edu">eduardo.figueroa7@upr.edu</a>
+          <a href="tel:+19393081163">(939) 308-1163</a>
+          <a href="https://www.linkedin.com/in/eduardo-figueroa-7638191ba/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-
-        <div class="ta-grid">
-
-          <div class="ta-col">
-            <h3 class="ta-col-title">Teaching Roles</h3>
-
-            <div class="ta-card reveal">
-              <div class="ta-card-top">
-                <div>
-                  <h4>AI/ML Course Assistant</h4>
-                  <p class="ta-org">UPR Medical Science</p>
-                </div>
-                <span class="ta-date">Feb – May 2023</span>
-              </div>
-              <ul class="ta-bullets">
-                <li>Assisted with "AI and ML Applied to Health Disparities Research (v2)"</li>
-                <li>Expanded course to professionals outside the UPR system</li>
-                <li>Supervised student projects and incorporated student feedback</li>
-              </ul>
-              <p class="ta-mentor">Mentor: Dr. Roche-Lima</p>
-            </div>
-
-            <div class="ta-card reveal">
-              <div class="ta-card-top">
-                <div>
-                  <h4>AI/ML Course Developer</h4>
-                  <p class="ta-org">UPR Medical Science</p>
-                </div>
-                <span class="ta-date">Apr – Jul 2022</span>
-              </div>
-              <ul class="ta-bullets">
-                <li>Developed pilot course "AIML + HDR" for graduate students and professionals</li>
-                <li>Created PowerPoints, example exercises, and instructional videos</li>
-                <li>Published: <em>Int. J. Environ. Res. Public Health</em> 20.3 (2023): 2726</li>
-              </ul>
-              <p class="ta-mentor">Mentor: Dr. Roche-Lima</p>
-            </div>
-
-            <div class="ta-card reveal">
-              <div class="ta-card-top">
-                <div>
-                  <h4>STEM Instructor</h4>
-                  <p class="ta-org">C3tech</p>
-                </div>
-                <span class="ta-date">Jun – Jul 2019 &middot; Caguas, PR</span>
-              </div>
-              <ul class="ta-bullets">
-                <li>Taught STEM concepts and programming with Scratch to elementary students</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="ta-col">
-            <h3 class="ta-col-title">Awards &amp; Fellowships</h3>
-
-            <div class="award-card reveal">
-              <div class="award-icon" aria-hidden="true">&#11088;</div>
-              <div>
-                <h4 class="award-title">HuBMAP Underrepresented Student Internship Extension</h4>
-                <p class="award-org">Pittsburgh Supercomputing Center</p>
-                <p class="award-date">Nov 2024 – Present</p>
-                <p class="award-note">Mentors: Ivan Cao-Berg, Dr. H. Ortiz</p>
-              </div>
-            </div>
-
-            <div class="award-card reveal">
-              <div class="award-icon" aria-hidden="true">&#127891;</div>
-              <div>
-                <h4 class="award-title">REU – SSP: HuBMAP Project</h4>
-                <p class="award-org">Carnegie Mellon University</p>
-                <p class="award-date">May – Aug 2024</p>
-              </div>
-            </div>
-
-            <div class="award-card reveal">
-              <div class="award-icon" aria-hidden="true">&#127891;</div>
-              <div>
-                <h4 class="award-title">REU – SSP: Brain Image Library</h4>
-                <p class="award-org">Carnegie Mellon University</p>
-                <p class="award-date">Jun – Aug 2023</p>
-              </div>
-            </div>
-
-            <div class="award-card reveal">
-              <div class="award-icon" aria-hidden="true">&#127981;</div>
-              <div>
-                <h4 class="award-title">PRIME Fellowship — Ethnic Disparities Research</h4>
-                <p class="award-org">Online</p>
-                <p class="award-date">Sep 2022 – May 2023</p>
-                <p class="award-note">ML methods for reference intervals by race and ethnicity<br>Mentors: Dr. Roche-Lima, Dr. H. Ortiz</p>
-              </div>
-            </div>
-
-            <div class="award-card reveal">
-              <div class="award-icon" aria-hidden="true">&#127947;</div>
-              <div>
-                <h4 class="award-title">VADSTI Data Science &amp; AI/ML Certification</h4>
-                <p class="award-org">AIM-AHEAD</p>
-                <p class="award-date">Feb 2023</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS & EDUCATION -->
-    <section id="skills" class="section section--alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Toolkit &amp; training</span>
-          <h2 class="section-title">Skills &amp; Education</h2>
-        </div>
-
-        <div class="skills-grid">
-
-          <div class="skills-block reveal">
-            <h3 class="skills-block-title">Education</h3>
-            <div class="edu-card">
-              <div class="edu-header">
-                <span class="edu-initials" aria-hidden="true">UPR</span>
-                <div>
-                  <h4 class="edu-degree">B.S. in Computer Science</h4>
-                  <p class="edu-school">University of Puerto Rico, Rio Piedras &middot; San Juan, PR</p>
-                  <p class="edu-minor">Minor in Cybersecurity</p>
-                  <p class="edu-grad">Expected December 2026</p>
-                </div>
-              </div>
-              <div class="edu-courses">
-                <p class="edu-courses-label">Relevant courses</p>
-                <div class="pill-group">
-                  <span class="pill">Cybersecurity</span>
-                  <span class="pill">Networking</span>
-                  <span class="pill">Data Science</span>
-                  <span class="pill">Bioinformatics</span>
-                  <span class="pill">Operating Systems</span>
-                  <span class="pill">Computational Statistics</span>
-                  <span class="pill">API Development</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-block reveal">
-            <h3 class="skills-block-title">Programming Languages</h3>
-            <div class="skill-list">
-              <div class="skill-row">
-                <span class="skill-name">Python</span>
-                <span class="skill-level skill-level--intermediate">Intermediate</span>
-              </div>
-              <div class="skill-row">
-                <span class="skill-name">C++</span>
-                <span class="skill-level skill-level--intermediate">Intermediate</span>
-              </div>
-              <div class="skill-row">
-                <span class="skill-name">C</span>
-                <span class="skill-level skill-level--intermediate">Intermediate</span>
-              </div>
-              <div class="skill-row">
-                <span class="skill-name">Bash</span>
-                <span class="skill-level skill-level--intermediate">Intermediate</span>
-              </div>
-              <div class="skill-row">
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-level skill-level--basic">Basic</span>
-              </div>
-              <div class="skill-row">
-                <span class="skill-name">C#</span>
-                <span class="skill-level skill-level--basic">Basic</span>
-              </div>
-              <div class="skill-row">
-                <span class="skill-name">Visual Basic</span>
-                <span class="skill-level skill-level--basic">Basic</span>
-              </div>
-            </div>
-
-            <h3 class="skills-block-title" style="margin-top: 2rem;">Tools &amp; Platforms</h3>
-            <div class="pill-group">
-              <span class="pill pill--teal">MongoDB</span>
-              <span class="pill pill--teal">Grafana</span>
-              <span class="pill pill--teal">Bridges 2</span>
-              <span class="pill pill--teal">Git</span>
-            </div>
-
-            <h3 class="skills-block-title" style="margin-top: 2rem;">Spoken Languages</h3>
-            <div class="lang-list">
-              <div class="lang-row">
-                <span class="lang-flag">&#127477;&#127479;</span>
-                <span class="lang-name">Spanish</span>
-                <span class="lang-level">Native</span>
-              </div>
-              <div class="lang-row">
-                <span class="lang-flag">&#127482;&#127480;</span>
-                <span class="lang-name">English</span>
-                <span class="lang-level">Native</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section--dark">
-      <div class="container">
-        <div class="contact-inner reveal">
-          <span class="section-label section-label--light">Say hello</span>
-          <h2 class="section-title section-title--light">Let's connect</h2>
-          <p class="contact-body">
-            I'm open to research collaborations, graduate program conversations, and interesting problems at the intersection of computing and biology.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:jfigueroa3945@gmail.com" class="contact-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              jfigueroa3945@gmail.com
-            </a>
-            <a href="tel:+19393081163" class="contact-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.95-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              (939) 308-1163
-            </a>
-            <a href="https://www.linkedin.com/in/eduardo-figueroa-7638191ba/" class="contact-link" target="_blank" rel="noopener">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn
-            </a>
-          </div>
-        </div>
+        <p class="contact-footer mono">
+          © 2026 Eduardo Figueroa-Santiago · San Juan, PR ·
+          <a href="../">Original layout</a>
+        </p>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Eduardo Figueroa-Santiago &middot; San Juan, Puerto Rico</p>
-      <p class="footer-alt"><a href="../">Original layout</a></p>
-    </div>
-  </footer>
-
   <script src="js/main.js"></script>
-  <!-- v2: indigo/amber theme, experience filters, animated stats -->
 </body>
 </html>
