@@ -82,30 +82,34 @@
               Undergraduate Computer Science student actively seeking research experiences or graduate schools in Bioinformatics.
             </p>
           </div>
-          <div class="about-stats reveal">
-            <div class="stat">
-              <span class="stat-num">10<span class="stat-sup">+</span></span>
-              <span class="stat-label">Conference Talks</span>
+          <div class="about-stats-board reveal">
+            <div class="about-stats about-stats--core">
+              <div class="stat">
+                <span class="stat-num">10<span class="stat-sup">+</span></span>
+                <span class="stat-label">Conference Talks</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">1</span>
+                <span class="stat-label">Publications</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">3<span class="stat-sup">+</span></span>
+                <span class="stat-label">Internships</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">2026</span>
+                <span class="stat-label">Graduating</span>
+              </div>
             </div>
-            <div class="stat">
-              <span class="stat-num">1</span>
-              <span class="stat-label">Publications</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">1</span>
-              <span class="stat-label">Acknowledgement</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">3<span class="stat-sup">+</span></span>
-              <span class="stat-label">Research Internships</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">2026</span>
-              <span class="stat-label">Graduating</span>
-            </div>
-            <div class="stat stat--text">
-              <span class="stat-text">Bioinfo · Networking</span>
-              <span class="stat-label">Interests</span>
+            <div class="about-stats about-stats--side">
+              <a class="stat stat--link" href="#research-acknowledgements">
+                <span class="stat-num">1</span>
+                <span class="stat-label">Acknowledgements</span>
+              </a>
+              <div class="stat stat--text">
+                <span class="stat-text">Bioinfo · Networking</span>
+                <span class="stat-label">Interest</span>
+              </div>
             </div>
           </div>
         </div>
@@ -440,14 +444,17 @@
               <a href="https://doi.org/10.3390/ijerph23050644" class="pub-doi" target="_blank" rel="noopener">DOI: 10.3390/ijerph23050644 &rarr;</a>
             </article>
 
-            <h3 class="research-subtitle">Acknowledgements</h3>
-
-            <article class="pub-card pub-card--ack">
-              <p class="pub-date">Jul 2023</p>
-              <h4 class="pub-title">Unsupervised machine learning method for indirect estimation of reference intervals for chronic kidney disease in the Puerto Rican population</h4>
-              <p class="pub-authors">Velev, J., LeBien, J. &amp; Roche-Lima, A.</p>
-              <p class="pub-venue"><em>Scientific Reports</em>, 13, 17198 (2023)</p>
-            </article>
+            <div class="ack-section" id="research-acknowledgements">
+              <h3 class="research-subtitle">Acknowledgements</h3>
+              <div class="ack-section-body">
+                <article class="pub-card pub-card--ack">
+                  <p class="pub-date">Jul 2023</p>
+                  <h4 class="pub-title">Unsupervised machine learning method for indirect estimation of reference intervals for chronic kidney disease in the Puerto Rican population</h4>
+                  <p class="pub-authors">Velev, J., LeBien, J. &amp; Roche-Lima, A.</p>
+                  <p class="pub-venue"><em>Scientific Reports</em>, 13, 17198 (2023)</p>
+                </article>
+              </div>
+            </div>
 
           </div>
 
@@ -464,7 +471,7 @@
                 <span class="talk-meta">Mar 2026 &middot; San Juan, PR</span>
               </li>
               <li class="talk-item">
-                <div class="talk-venue">ABRCMS <span class="badge-unpresented" title="Accepted but unable to present">Accepted</span></div>
+                <div class="talk-venue">ABRCMS <span class="badge-unpresented">Couldn't present</span></div>
                 <div class="talk-title">HuBMAP Dashboard Development</div>
                 <span class="talk-meta">Nov 2024 &middot; Pittsburgh, PA</span>
               </li>
@@ -580,12 +587,12 @@
           <div class="ta-col">
             <h3 class="ta-col-title">Awards &amp; Fellowships</h3>
 
-            <div class="awards-cluster reveal">
-              <div class="awards-cluster-row awards-cluster-row--2">
-                <article class="award-tile">
+            <div class="awards-panel reveal">
+              <div class="awards-panel-row awards-panel-row--2">
+                <article class="awards-panel-cell">
                   <span class="award-tile-icon" aria-hidden="true">&#11088;</span>
                   <h4 class="award-tile-title">HuBMAP Underrepresented Student Internship Extension</h4>
-                  <p class="award-tile-org">Pittsburgh Supercomputing Center</p>
+                  <p class="award-tile-org">Pittsburgh Supercomputing Center &middot; Remote from Puerto Rico (office in Pittsburgh)</p>
                   <p class="award-tile-date">Nov 2024 – Aug 2025</p>
                   <ul class="award-tile-bullets">
                     <li>Continuation of HuBMAP research project</li>
@@ -593,7 +600,7 @@
                   </ul>
                   <p class="award-tile-note">Mentors: Ivan Cao-Berg, Dr. H. Ortiz</p>
                 </article>
-                <article class="award-tile">
+                <article class="awards-panel-cell">
                   <span class="award-tile-icon" aria-hidden="true">&#127891;</span>
                   <h4 class="award-tile-title">REU - SSP HuBMAP Project</h4>
                   <p class="award-tile-org">Carnegie Mellon University</p>
@@ -603,8 +610,8 @@
                   </ul>
                 </article>
               </div>
-              <div class="awards-cluster-row awards-cluster-row--3">
-                <article class="award-tile">
+              <div class="awards-panel-row awards-panel-row--3">
+                <article class="awards-panel-cell">
                   <span class="award-tile-icon" aria-hidden="true">&#127891;</span>
                   <h4 class="award-tile-title">REU - SSP Brain Image Library</h4>
                   <p class="award-tile-org">Carnegie Mellon University</p>
@@ -615,19 +622,18 @@
                     <li>Custom report for different Stakeholders</li>
                   </ul>
                 </article>
-                <article class="award-tile">
+                <article class="awards-panel-cell">
                   <span class="award-tile-icon" aria-hidden="true">&#127981;</span>
                   <h4 class="award-tile-title">PRIME Fellowship</h4>
-                  <p class="award-tile-org">Ethnic Disparities Research</p>
+                  <p class="award-tile-org">Ethnic Disparities Research &middot; Online</p>
                   <p class="award-tile-date">Sep 2022 – May 2023</p>
                   <p class="award-tile-note">ML methods for reference intervals by race and ethnicity<br>Mentors: Dr. Roche-Lima, Dr. H. Ortiz</p>
                 </article>
-                <article class="award-tile">
+                <article class="awards-panel-cell">
                   <span class="award-tile-icon" aria-hidden="true">&#127947;</span>
                   <h4 class="award-tile-title">VADSTI Data Science Training</h4>
                   <p class="award-tile-org">AIM-AHEAD</p>
-                  <p class="award-tile-date">Feb 2023</p>
-                  <p class="award-tile-note">Data Science &amp; AI/ML Certification</p>
+                  <p class="award-tile-date">Data Science &amp; AI/ML Certification &middot; Feb 2023</p>
                 </article>
               </div>
             </div>

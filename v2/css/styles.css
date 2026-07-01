@@ -363,6 +363,33 @@ strong { font-weight: 700; }
   margin-bottom: 1.5rem;
 }
 
+.stats-board {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.stats-board__core,
+.stats-board__side {
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+}
+
+.stats-board__core {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stats-board__side {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 .bento-cell {
   background: var(--bg2);
   padding: 1.25rem;
@@ -378,6 +405,16 @@ strong { font-weight: 700; }
 
 .bento-cell--text {
   justify-content: center;
+}
+
+.bento-cell--link {
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+
+.bento-cell--link:hover {
+  background: rgba(200, 255, 0, 0.05);
 }
 
 .bento-text {
@@ -617,6 +654,12 @@ strong { font-weight: 700; }
   border-top: 1px solid var(--line);
 }
 
+.ack-section-body {
+  border: 2px dashed var(--line);
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+}
+
 .pub {
   padding: 1.25rem 0;
   border-bottom: 1px solid var(--line);
@@ -656,8 +699,9 @@ strong { font-weight: 700; }
 }
 
 .pub--ack {
-  border-left: 2px dashed var(--line);
-  padding-left: 0.85rem;
+  border-left: none;
+  padding-left: 0;
+  border-bottom: none;
 }
 
 .talks-list {
@@ -1001,6 +1045,8 @@ strong { font-weight: 700; }
   .ta-layout { grid-template-columns: 1fr; }
   .skills-layout { grid-template-columns: 1fr; }
   .talks-list li { grid-template-columns: 1fr; }
+  .stats-board { grid-template-columns: 1fr; }
+  .stats-board__core { grid-template-columns: repeat(2, 1fr); }
   .award-cluster-row--2,
   .award-cluster-row--3 { grid-template-columns: 1fr; }
 
@@ -1010,6 +1056,6 @@ strong { font-weight: 700; }
 
 @media (max-width: 480px) {
   .intro-headline h1 { font-size: 2.6rem; }
-  .bento { grid-template-columns: 1fr; }
-  .bento-cell--wide { grid-column: 1; border-bottom: 1px solid var(--line); }
+  .stats-board__core,
+  .stats-board__side { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
 }

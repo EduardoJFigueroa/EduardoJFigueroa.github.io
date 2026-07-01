@@ -435,10 +435,25 @@ strong { font-weight: 600; }
 
 .section-title { margin-top: 0.5rem; margin-bottom: 1.25rem; }
 
+.about-stats-board {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
 .about-stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+.about-stats--core {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-stats--side {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .stat {
@@ -465,6 +480,11 @@ strong { font-weight: 600; }
 .stat-label { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); letter-spacing: 0.02em; }
 
 .stat--text { display: flex; flex-direction: column; justify-content: center; }
+.stat--link {
+  text-decoration: none;
+  color: inherit;
+}
+.stat--link:hover .stat-num { color: var(--teal-dark); }
 .stat-text {
   display: block;
   font-family: var(--font-head);
@@ -477,10 +497,13 @@ strong { font-weight: 600; }
 
 @media (max-width: 820px) {
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .about-stats { grid-template-columns: repeat(2, 1fr); }
+  .about-stats-board { grid-template-columns: 1fr; }
+  .about-stats--core { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 480px) {
-  .about-stats { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .about-stats--core,
+  .about-stats--side { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .about-stats--side { grid-template-rows: auto; }
   .stat-num { font-size: 1.9rem; }
   .stat-text { font-size: 0.92rem; }
 }
@@ -686,9 +709,16 @@ strong { font-weight: 600; }
   font-weight: 700;
   color: var(--navy);
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--gray-200);
+}
+
+.ack-section-body {
+  border: 2px dashed var(--gray-200);
+  border-radius: var(--radius);
+  background: white;
+  padding: 0.25rem;
 }
 
 .pub-card {
@@ -702,7 +732,13 @@ strong { font-weight: 600; }
 }
 .pub-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .pub-card:last-child { margin-bottom: 0; }
-.pub-card--ack { border-style: dashed; background: var(--gray-100); }
+.pub-card--ack {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  margin-bottom: 0;
+}
+.pub-card--ack:hover { transform: none; box-shadow: none; }
 
 .pub-date {
   font-size: 0.75rem;
@@ -934,30 +970,30 @@ strong { font-weight: 600; }
   line-height: 1.5;
 }
 
-.awards-cluster {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-
-.awards-cluster-row {
-  display: grid;
-  gap: 0.85rem;
-}
-
-.awards-cluster-row--2 { grid-template-columns: repeat(2, 1fr); }
-.awards-cluster-row--3 { grid-template-columns: repeat(3, 1fr); }
-
-.award-tile {
+.awards-panel {
   background: white;
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
-  padding: 1rem 1.1rem;
   box-shadow: var(--shadow);
-  transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
 }
 
-.award-tile:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.awards-panel-row {
+  display: grid;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.awards-panel-row:last-child { border-bottom: none; }
+
+.awards-panel-row--2 { grid-template-columns: repeat(2, 1fr); }
+.awards-panel-row--3 { grid-template-columns: repeat(3, 1fr); }
+
+.awards-panel-cell {
+  padding: 1rem 1.1rem;
+  border-right: 1px solid var(--gray-200);
+}
+
+.awards-panel-cell:last-child { border-right: none; }
 
 .award-tile-icon {
   display: block;
@@ -1009,8 +1045,13 @@ strong { font-weight: 600; }
 @media (max-width: 780px) {
   .ta-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .ta-card-top { flex-direction: column; gap: 0.3rem; }
-  .awards-cluster-row--2,
-  .awards-cluster-row--3 { grid-template-columns: 1fr; }
+  .awards-panel-row--2,
+  .awards-panel-row--3 { grid-template-columns: 1fr; }
+  .awards-panel-cell {
+    border-right: none;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .awards-panel-cell:last-child { border-bottom: none; }
 }
 
 /* ============================================================
